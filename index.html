@@ -1,21 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3GZHFB5G5L"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3GZHFB5G5L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-            gtag('config', 'G-3GZHFB5G5L');
-        </script>
+        gtag('config', 'G-3GZHFB5G5L');
+    </script>
 
-        <title>Patterson Lab</title>
-        <meta charset="UTF-8">
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap" rel="stylesheet">
-    </head>
+    <title>Patterson Lab</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap" rel="stylesheet">
+</head>
 
-    Testing
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<nav class="nav">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">Patterson Lab</a>
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a href="html/research.html">Research</a></li>
+                <li><a href="html/publications.html">Publications</a></li>
+                <li><a href="html/tools.html">Tools</a></li>
+                <li><a href="html/people.html">Join Us!</a></li>
+                <li><a href="html/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+    </div>
+</nav>
+
+<section class="home"></section>
+
+<div style="height: 1000px">
+    <h2 class="myH1">
+        How does vision work?
+    </h2>
+    <h2 class="myH2">
+        How do neural circuits give rise to the way we perceive and experience the world?
+    </h2>
+    <p>
+        To address these questions, we study the non-human primate retina, an outpost of the brain located in the back of the eye. The eye and the neural circuits within are generally thought of as a fancy camera for the cortex where the computations that define visual perception and behavior begin. This view of the retina is the foundation of our current understanding of how vision works and is based largely on the three most common ganglion cell types. Why then does the primate retina need 14 bipolar cell types, 40-60 amacrine cell types and over 20 ganglion cells? At least 40 primate retinal neurons have no place in our current understanding of how our visual system works, which indicates we may understand just a fraction of the visual processing that occurs in the back of the eye.
+    </p>
+    <p>
+        Our focus is on the ganglion cells because they provide the sole source of visual information to the brain and thus make up the building blocks for all downstream vision. A key emphasis is on understanding the many mysterious, understudied rarer ganglion cell types, not only because each may be individually important for human health and disease, but also because together they may lead to more comprehensive model of how vision works that can accommodate the full complexity and sophistication of retinal processing.
+    </p>
+    <p>
+        Addressing these gaps in knowledge are increasingly urgent. Our basic science understanding of what the retina tells the brain is a key limitation to further development of devices that aim to restore vision in the blind by replacing the retinal output, such as retinal prosthetics. Put simply, it's hard to fix something when you don't know what it does or how it works. As such, our goal is not only to characterize the information present in the output of each ganglion cell type, but to understand each type in the context of the visual functions they evolved to mediate. We also aim to better understand how the retina (and neural circuits in general) break by tracking how neural circuits function and remodel during degeneration.
+    </p>
+    <p>
+        Check out our <a href="html/research.html">current research</a> to learn more about the lab's work on retinal circuitry, degeneration, and high-resolution, non-invasive functional imaging techniques. We are also <a href="html/people.html">hiring</a>!
+    </p>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/navbar.js"></script>
+<script>
+    $(window).scroll(function () {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+</script>
+
+<footer>
+    Copyright (c) 2024, Sara Patterson.
+</footer>
+
 </html>

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    --primary: #334de6;
+    --secondary: #f09228;
+    --banner: #111;
+    --primarydark: #132753;
+    --primarylight: #eaeffa;
+    --grayedtext: #444;
+    --centering: 5%;
+}
+
+/* ----- TOGGLE TAGS ----- */
+.tags {
+    margin-top: 0px;
+    font-size: 80%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.tag {
+    color: var(--primarydark);
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 110%;
+    background-color: var(--primarylight);
+    border: 1px solid #fff;
+    padding: 3px 10px;
+    margin: 3px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.tag:hover {
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.tag.active {
+    color: #fafaff;
+    background-color: var(--primary);
+}
+
+.tag.active:hover {
+    border: 1px solid var(--primary);
+}
+
+
+/* ----- PUBLICATION CARDS ----- */
+.publication-card {
+    background-color: #fafaff;
+    border-radius: 12px;
+    border: 2px solid var(--primarylight);
+    padding: 5px;
+    margin: 15px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+/* ----- CITATION TEXT ----- */
+.citation {
+    padding: 3px;
+    margin: 5px;
+}
+
+.citation p {
+    margin: 0;
+}
+
+.citation .title {
+    font-size: 125%;
+    font-weight: bold;
+    padding-left: 0;
+}
+
+.citation .authors {
+    color: var(--grayedtext);
+    padding-left: 25px;
+    margin-top: 4px;
+    font-size: 100%;
+}
+
+.citation .journal {
+    color: var(--grayedtext);
+    font-size: 95%;
+    padding-left: 25px;
+    margin-top: 4px;
+    font-size: 90%;
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}

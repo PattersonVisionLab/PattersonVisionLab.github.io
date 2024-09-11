@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3GZHFB5G5L"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-3GZHFB5G5L');
+        </script>
+
+        <title>Patterson Lab</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/style.css"/>
+        <link rel="stylesheet" href="../css/navbar.css">
+    </head>
+
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">Patterson Lab</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="people.html">Join Us!</a></li>
+                    <li><a href="contact.html">About</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+<section class="publications"></section>
+<div style="height:850px">
+    <p class="myH2">Open Source Code</p>
+        <p>
+            We have developed a number of tools to support our research and make them available to the community. These include:
+        </p>
+        <ul>
+            <li>
+                <b><a href="https://github.com/sarastokes/sbfsem-tools">SBFSEM-tools.</a></b>
+                A MATLAB toolbox for 3D rendering and analysis of connectomics data with serial block-face scanning electron microscopy. The underlying classes are generic and likely applicable to many techniques. Specialized support is included for disc-based annotations (e.g., from the open-source Viking annotation software), SWC, and accessing SQL annotation databases through OData queries. A smaller set of tools for Python (<b><a href="#">py-sbfsem</a></b>) is also available.
+            </li>
+            <li>
+                <b><a href="https://github.com/sarastokes/aodata">AOData.</a></b>
+                A framework for managing data, metadata and code for adaptive optics imaging experiments.
+            </li>
+            <li>
+                <b><a href="https://github.com/sarastokes/h5-tools">h5tools-matlab.</a></b> High-level interface for working with the low-level HDF5 library in MATLAB. Adds support missing from MATLAB's built-in HDF5 functions (e.g., groups, links, and compound data types).
+            </li>
+            <li>
+                <b><a href="https://github.com/sarastokes/RoiViewer">RoiViewer.</a></b> Standalone user interface for viewing ROI responses and experimenting with common signal processing strategies. An streamlined version for use during an experiment is also available (<b><a href="https://github.com/sarastokes/faoslo-online">faoslo-online</a></b>).
+            </li>
+            <li>
+                <b><a href="https://github.com/sarastokes/facile-tools">facile-tools.</a></b> A large MATLAB toolbox containing a variety of functions for working with Functional Adaptive-optics Calcium Imaging in the Living Eye.
+            </li>
+        </ul>
+
+        <p class="myH2">Publication Data and Code</p>
+        <p>
+            Official repositories containing compiled software and unprocessed data:
+        </p>
+        <ul>
+            <li><a href="https://neuromorpho.org/NeuroMorpho_ArchiveLinkout.jsp?ARCHIVE=Patterson_Neitz&DATE=2022-08-01">
+                Patterson_Neitz archive on Neuromorpho.</a> Morphological data (in SWC format) from my connectomics and confocal microscopy work on S-OFF midget RGCs, M1 ipRGCs, M2 ipRGCs, small bistratified RGCs, and ON dsRGCs in the Neitz lab is available on Neuromorpho. The data includes 2 horizontal cell types, 3 bipolar cell types, 3 amacrine cell types, and 5 ganglion cell types.
+            </li>
+            <li>
+                <a href="https://osf.io/s9qw4">Chromatic and Spatial Tuning archive on OSF</a>. Data, software, and Tyler's processing pipeline for Godat et al (2022) <em>PLoS ONE</em></em>
+            </li>
+        </ul>
+
+        <p>
+            Github repositories containing analysis code and 3D reconstructions:
+        </p>
+        <ul>
+            <li>
+                <a href="https://github.com/sarastokes/NonCardinalRGCs">NonCardinalRGCs</a>. Godat et al (2024) <em>Journal of Neuroscience</em>.
+            </li>
+            <li><a href="https://github.com/sarastokes/SmoothMonostratifiedRGCs">
+                Smooth Monostratified RGCs</a>. Patterson, Girresch, et al. (2024) <i>ENeuro</i>
+            </li>
+            <li>
+                <a href="https://github.com/sarastokes/SConeEdgeDetection">
+                SConeEdgeDetection</i></a>. Patterson et al (2019) <i>Scientific Reports</i>
+            </li>
+            <li>
+                <a href="https://github.com/neitzlab/SynapticInputsToOnParasolCells">SynapticInputsToOnParasols</a>. Patterson, Bordt et al (2019) <i>Journal of Comparative Neurology</i>
+            </li>
+            <li>
+                <a href="https://github.com/sarastokes/rabbitgammacell">RabbitGammaCell</a>. Bordt et al (2019) <i>Visual Neuroscience</i>
+            </li>
+        </ul>
+</div>
+
+    <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/navbar.js"></script>
+
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+
+    <footer>
+        Copyright (c) 2024, Sara Patterson.
+    </footer>
+</html>
