@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3GZHFB5G5L"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-3GZHFB5G5L');
+        </script>
+
+        <title>Patterson Lab</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/navbar.css"/>
+    </head>
+
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">Patterson Lab</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a style="text-decoration: underline;" href="people.html">Join Us!</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="research"></section>
+
+    <div style="height: 1000px">
+        <p>
+            Our goal is to provide a supportive and inclusive environment for all lab members. We are always looking for creative and enthusiastic scientists to join our team and work towards advancing their career goals and our understanding of the primate visual system.
+        </p>
+
+        <p>
+            <b>Graduate Students.</b>
+                We are currently recruiting graduate students and open to rotations beginning in Spring 2025. I am currently affiliated with the <a href="https://www.urmc.rochester.edu/education/graduate/phd/neurosciences.aspx">Neuroscience</a> Ph.D. programs. If you are in a different graduate program at the University of Rochester, we can discuss ways to work together.
+
+            <br><br>
+
+            <b>Postdoctoral Fellows.</b>
+                If you are interested in a postdoctoral position, please contact me directly to discuss potential projects.
+
+            <br><br>
+
+            <b>Undergraduates and Postbaccalaureate positions.</b>
+                We are always looking for motivated undergraduates to join our team. If you are interested in gaining research experience in the lab, please contact me directly.
+                We have projects available for students with a variety of backgrounds and interests, including computer science, engineering, and biology. Postgraduate students interested in a full-time postbaccalaureate research experience while preparing grad school applications are also encouraged to reach out.
+
+        </p>
+
+    </div>
+
+    <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/navbar.js"></script>
+
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+
+    <footer>
+        Copyright (c) 2024, Sara Patterson.
+    </footer>
+</html>

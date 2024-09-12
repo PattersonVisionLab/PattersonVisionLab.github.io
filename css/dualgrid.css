@@ -1,0 +1,34 @@
+.responsive-two-column-grid {
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.responsive-two-column-grid > * {
+    padding: 1rem;
+}
+
+.image_content {
+    padding: 10px;
+    text-align: center;
+}
+
+.text_content {
+    text-align: justify;
+    padding: 10px;
+}
+
+.caption {
+    font-style: italic;
+    margin-top: 2px;
+    color:#444;
+    font-family: 'Inter', sans-serif;
+    font-size: 100%;
+}
+
+@media (min-width: 768px) {
+    .responsive-two-column-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

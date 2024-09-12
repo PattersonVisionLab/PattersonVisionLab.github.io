@@ -50,11 +50,11 @@ html {
 
 /* ----- PUBLICATION CARDS ----- */
 .publication-card {
-    background-color: #fafaff;
+    /* background-color: #fafaff; */
+    /* border: 2px solid var(--primarylight); */
     border-radius: 12px;
-    border: 2px solid var(--primarylight);
-    padding: 5px;
-    margin: 15px;
+    padding: 1px; /* Spacing before border (5px for bordered) */
+    margin: 3px; /* Spacing between cards (15px for bordered) */
     margin-left: 2%;
     margin-right: 2%;
 }
@@ -71,7 +71,7 @@ html {
 }
 
 .citation .title {
-    font-size: 125%;
+    font-size: 115%;
     font-weight: bold;
     padding-left: 0;
 }
@@ -80,17 +80,17 @@ html {
     color: var(--grayedtext);
     padding-left: 25px;
     margin-top: 4px;
-    font-size: 100%;
+    font-size: 90%;
 }
 
 .citation .journal {
     color: var(--grayedtext);
-    font-size: 95%;
+    font-size: 90%;
     padding-left: 25px;
     margin-top: 4px;
-    font-size: 90%;
     font-family: "Bitter", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    font-size: 85%;
 }

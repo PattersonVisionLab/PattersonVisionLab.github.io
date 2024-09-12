@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+
 html {
-    --highlight: #00E676;
+    --highlight: aquamarine;
     --foreground: #fff;
     --background: #111;
 }
@@ -31,6 +33,7 @@ html {
 .nav div.logo a {
     text-decoration: none;
     color: var(--foreground);
+    font-family: 'Babak One', sans-serif;
     font-size: 2rem;
     font-weight: bold;
 }
@@ -61,8 +64,9 @@ html {
 }
 
 .nav div.main_list ul li a {
-    text-decoration: none;
     color: var(--foreground);
+    text-decoration: none;
+    font-weight: bold;
     line-height: 40px;
     font-size: 1.5rem;
 }
@@ -81,6 +85,7 @@ html {
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
+
 /* Update below to match content width */
 @media screen and (max-width:1000px) {
     .navTrigger {
@@ -129,9 +134,6 @@ html {
         display: block;
     }
 }
-
-/* Animation Inspiration taken from Dicson
-   https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
 
 .navTrigger {
     cursor: pointer;
