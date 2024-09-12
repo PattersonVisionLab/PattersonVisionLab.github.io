@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3GZHFB5G5L"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-3GZHFB5G5L');
+        </script>
+
+        <title>Patterson Lab</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/navbar.css"/>
+        <link rel="stylesheet" href="../css/dualgrid.css"/>
+    </head>
+
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">Patterson Lab</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="people.html">Join Us!</a></li>
+                    <li><a style="text-decoration: underline;" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="research"></section>
+
+    <div style="height: 1000px">
+
+        <br><br>
+        <div class="responsive-two-column-grid">
+            <div class="image_content">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11648.770342353022!2d-77.63512822035027!3d43.121480367905455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d6b4cc1f4f47d1%3A0xfa525b4714c7e827!2s601%20Elmwood%20Ave%2C%20Rochester%2C%20NY%2014642!5e0!3m2!1sen!2sus!4v1726003238869!5m2!1sen!2sus"
+                    width="600" height="450"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <div class="text_content">
+                <p>
+                    <b>Location</b><br>
+                    David & Ilene Flaum Eye Institute<br>
+                    601 Elmwood Ave., G.4111<br>
+                    Rochester, NY 14642
+                    <br><br>
+                    <b>Contact:</b><br>
+                    Email: <a href="mailto:Sara_Patterson@urmc.rochester.edu">Sara_Patterson@urmc.rochester.edu</a>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+
+    <footer>
+        Copyright (c) 2024, Sara Patterson.
+    </footer>
+</html>
