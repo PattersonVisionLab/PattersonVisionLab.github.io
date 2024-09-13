@@ -323,9 +323,3 @@ html {
         transform: translateY(-9px) rotate(135deg);
     }
 }
-
-@media all and (max-width:700px) {
-    .myP {
-        padding: 2%;
-    }
-}
