@@ -35,11 +35,7 @@ details p {
 }
 
 /* Design for full-sized window */
-@media (min-width: 768px) {
-    .responsive-two-column-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+@media (min-device-width: 768px) {
 
     .responsive-two-column-grid .text_content p {
         font-size: 18px;
@@ -50,5 +46,10 @@ details p {
 @media (min-width: 1250px) {
     .responsive-two-column-grid .text_content p {
         font-size: 20px;
+    }
+
+    .responsive-two-column-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }

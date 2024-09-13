@@ -14,19 +14,60 @@
     height: 1000px;
 }
 
+.square_image {
+    width: 50%;
+}
+.stim_diagram {
+    width: 75%;
+}
+.caption {
+    font-size: 100%;
+}
+.press_list {
+    padding-inline-start:4%;
+}
 
-@media (min-width: 360px) {
+/* Smartphones (portrait) */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     html {color:crimson}
     .index_div {
-        height: 1850px;
+        height: auto;
+    }
+    p {
+        font-size: 1rem;
+    }
+    footer {
+    	padding: 2vw 2em;
+        font-size: 0.75rem;
+    }
+    .nav {
+        height: 50px;
+    }
+    .nav div.logo a {
+        font-size: 3rem;
+    }
+    .square_image {
+        width: 80%;
+    }
+    .stim_diagram {
+        width: 85%;
+    }
+    .caption {
+        font-size: 80%;
+    }
+    .press_list {
+        padding-inline-start: 8%;
+        font-size: 95%;
     }
 }
 
+/* Ipad (portrait and landscape) */
 /* This is where two columns are enforced in dualgrid.css */
-@media (min-width: 768px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     html {color: blue;}
+
     .index_div {
-        height: 1250px;
+        height: 1300px;
     }
 
     .tools_div {
@@ -36,9 +77,11 @@
     .research_div {
         height: 1400px;
     }
+
 }
 
-@media (min-width: 1000px) {
+/* Desktops and laptops */
+@media only screen and (min-width: 1224px) {
     html {color:blueviolet}
     .index_div {
         height: 1100px;
@@ -56,15 +99,34 @@
     .research_div {
         height: 1550px;
     }
+    .stim_diagram {
+        width: 85%;
+    }
+    .square_image {
+        width: 60%;
+    }
+    .press_list {
+        padding-inline-start: 2%;
+    }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1750px) {
     html {color:darkcyan}
     .index_div {
         height: 850px;
     }
     .research_div {
         height: 1800px;
+    }
+    .stim_diagram {
+        width: 65%;
+    }
+
+    .square_image {
+        width: 50%;
+    }
+    .press_list {
+        padding-inline-start: 2%;
     }
 }
 
