@@ -34,17 +34,11 @@ details p {
     font-size: 18px;
 }
 
-.research_div {
-    height: 2000px;
-}
 /* Design for full-sized window */
 @media (min-width: 768px) {
     .responsive-two-column-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-    }
-    .research_div {
-        height: 1400px;
     }
 
     .responsive-two-column-grid .text_content p {
@@ -54,9 +48,6 @@ details p {
 
 /* Design for larger screens */
 @media (min-width: 1250px) {
-    .research_div {
-        height: 1550px;
-    }
     .responsive-two-column-grid .text_content p {
         font-size: 20px;
     }

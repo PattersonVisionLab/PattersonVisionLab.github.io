@@ -1,0 +1,71 @@
+.index_div {
+    height: 1000px;
+}
+
+.research_div {
+    height: 2000px;
+}
+
+.tools_div {
+    height: 850px;
+}
+
+.contact_div {
+    height: 1000px;
+}
+
+
+@media (min-width: 360px) {
+    html {color:crimson}
+    .index_div {
+        height: 1850px;
+    }
+}
+
+/* This is where two columns are enforced in dualgrid.css */
+@media (min-width: 768px) {
+    html {color: blue;}
+    .index_div {
+        height: 1250px;
+    }
+
+    .tools_div {
+        height: 1000px;
+    }
+
+    .research_div {
+        height: 1400px;
+    }
+}
+
+@media (min-width: 1000px) {
+    html {color:blueviolet}
+    .index_div {
+        height: 1100px;
+    }
+    .contact_div {
+        height: 74vh;
+    }
+}
+
+@media (min-width: 1250px) {
+    html {color:darkslateblue}
+    .index_div {
+        height: 1000px;
+    }
+    .research_div {
+        height: 1550px;
+    }
+}
+
+@media (min-width: 1500px) {
+    html {color:darkcyan}
+    .index_div {
+        height: 850px;
+    }
+    .research_div {
+        height: 1800px;
+    }
+}
+
+html {color: black;}
