@@ -13,6 +13,14 @@
     text-align: center;
 }
 
+.caption {
+    font-style: italic;
+    margin-top: 2px;
+    color:#444;
+    font-family: 'Inter', sans-serif;
+    font-size: 100%;
+}
+
 .text_content {
     text-align: justify;
     padding: 10px;
@@ -22,22 +30,13 @@
     font-size: 16px;
 }
 
-.caption {
-    font-style: italic;
-    margin-top: 2px;
-    color:#444;
-    font-family: 'Inter', sans-serif;
-    font-size: 100%;
+details p {
+    font-size: 18px;
 }
 
 .research_div {
     height: 2000px;
 }
-
-details p {
-    font-size: 18px;
-}
-
 /* Design for full-sized window */
 @media (min-width: 768px) {
     .responsive-two-column-grid {
@@ -55,6 +54,9 @@ details p {
 
 /* Design for larger screens */
 @media (min-width: 1250px) {
+    .research_div {
+        height: 1550px;
+    }
     .responsive-two-column-grid .text_content p {
         font-size: 20px;
     }
