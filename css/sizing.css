@@ -15,10 +15,10 @@
 }
 
 .square_image {
-    width: 50%;
+    width: 50vw; /*50% */
 }
 .stim_diagram {
-    width: 75%;
+    width: 75vw; /*75%;*/
 }
 .caption {
     font-size: 100%;
@@ -47,10 +47,10 @@
         font-size: 3rem;
     }
     .square_image {
-        width: 80%;
+        width: 40vw; /*80%;*/
     }
     .stim_diagram {
-        width: 85%;
+        width: 42.5vw; /*85vw;*/
     }
     .caption {
         font-size: 80%;
@@ -100,10 +100,10 @@
         height: 1550px;
     }
     .stim_diagram {
-        width: 85%;
+        width: 42.5vw; /*85%;*/
     }
     .square_image {
-        width: 60%;
+        width: 25vw; /*60%;*/
     }
     .press_list {
         padding-inline-start: 2%;
@@ -119,11 +119,11 @@
         height: 1800px;
     }
     .stim_diagram {
-        width: 65%;
+        width: 65vw;
     }
 
     .square_image {
-        width: 50%;
+        width: 50vw;
     }
     .press_list {
         padding-inline-start: 2%;
