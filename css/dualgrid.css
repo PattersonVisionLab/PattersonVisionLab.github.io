@@ -21,10 +21,10 @@
     font-size: 100%;
 }
 
-.text_content {
+/* .text_content {
     text-align: justify;
     padding: 10px;
-}
+} */
 
 .text_content p {
     font-size: 16px;
@@ -44,10 +44,6 @@ details p {
 
 /* Design for larger screens */
 @media (min-width: 1250px) {
-    .responsive-two-column-grid .text_content p {
-        font-size: 20px;
-    }
-
     .responsive-two-column-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;

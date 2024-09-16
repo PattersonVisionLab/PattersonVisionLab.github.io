@@ -12,10 +12,24 @@
 
         <title>Patterson Lab</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <link rel="stylesheet" href="../css/style.css" />
         <link rel="stylesheet" href="../css/navbar.css"/>
         <link rel="stylesheet" href="../css/dualgrid.css"/>
         <link rel="stylesheet" href="../css/sizing.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="../js/navbar.js"></script>
+        <script>
+            $(window).scroll(function () {
+                if ($(document).scrollTop() > 50) {
+                    $('.nav').addClass('affix');
+                    console.log("OK");
+                } else {
+                    $('.nav').removeClass('affix');
+                }
+            });
+        </script>
     </head>
 
     <nav class="nav">
@@ -25,7 +39,7 @@
             </div>
             <div id="mainListDiv" class="main_list">
                 <ul class="navlinks">
-                    <li><a style="text-decoration: underline;" href="research.html">Research</a></li>
+                    <li><a href="research.html" style="text-decoration: underline;">Research</a></li>
                     <li><a href="publications.html">Publications</a></li>
                     <li><a href="tools.html">Tools</a></li>
                     <li><a href="people.html">Join Us!</a></li>
@@ -43,47 +57,71 @@
     <section class="research"></section>
 
     <main>
-        <!-- <p class="myH2" style="margin-bottom:1%;">Research Areas</p>
-            <details open="true">
-                <summary>
-                    Structure, physiology, and function of rare primate ganglion cells
-                </summary>
-                <p>
-                    The ability to functionally classify ganglion cells in the living eye, then return to study the same cells in subsequent experiments forms the foundation of the lab's research. We can currently distinguish over 20 distinct functional classes based on their contrast, spectral, spatial and temporal tuning. The ongoing effort to improve classification stimuli and analyses allows us to continue learning new things about foveal ganglion cells and often reveals exciting new research directions. We are also interested in utilizing connectomics to determine the underlying circuitry responsible for the exciting new response properties identified with calcium imaging.
-                </p>
-                <p>
-                    Our ultimate goal is to identify the very best stimuli for each ganglion cells type, ones that get at the heart of each neuron's role in vision. Potential projects in this area focuses on specific cell types (e.g., ON direction-selective ganglion cells) or population coding of specific visual features (e.g., visual signals created by eye movements).
-                </p>
-            </details>
+        <p class="myH2">Research Areas</p>
+        <details>
+            <summary>
+                Structure, physiology, and function of rare primate ganglion cells
+            </summary>
+            <p>
+                The ability to functionally classify ganglion cells in the living eye, then return to study the same cells in subsequent experiments forms the foundation of the lab's research. We can currently distinguish over 20 distinct functional classes based on their contrast, spectral, spatial and temporal tuning. The ongoing effort to improve classification stimuli and analyses allows us to continue learning new things about foveal ganglion cells and often reveals exciting new research directions. We are also interested in utilizing connectomics to determine the underlying circuitry responsible for the exciting new response properties identified with calcium imaging.
+            </p>
+            <p>
+                Our ultimate goal is to identify the very best stimuli for each ganglion cells type, ones that get at the heart of each neuron's role in vision. Potential projects in this area focus on specific cell types (e.g., ON direction-selective ganglion cells) or population coding of specific visual features (e.g., visual signals created by eye movements).
+            </p>
+        </details>
 
-            <details open="true">
-                <summary>
-                    Tracking ganglion cell degeneration in cortical blindness and determining retinal contributions to blindsight
-                </summary>
+        <details>
+            <summary>
+                Ganglion cell degeneration in cortical blindness, retinal contributions to blindsight
+            </summary>
+
+            <p>
+                V1 damage is common in strokes and leads to cortical blindness, a complete loss of conscious visual perception in the affected area. However, some visual capabilities are preserved (blindsight); patients can detect orientation, make reflexive eye movements, and even adjust grasp while reaching for objects -- all without conscious visual awareness. Remarkably, this apparent boundary between conscious and subconscious vision is not fixed, as training developed by our collaborator <a href="https://www.urmc.rochester.edu/eye-institute/research/labs/huxlin.aspx">Dr. Krystel Huxlin</a> can restore some visual awareness and performance.
+            </p>
+            <p>
+                Cortical blindness also offers a rare opportunity to isolate the contributions of rarer ganglion cell types and their contributions to subconscious visual functions. V1 damage leads to retrograde degeneration, beginning in the LGN and  that eliminates ~80% of RGCS, particularly the midget RGCs, while maintaining the rarer RGC types. Little is known about how ganglion cell physiology changes prior to cell death and how the response properties of the resilient types are altered. This work is important for identifying when early treatment might be effective in  stroke patients.
+            </p>
+            <p  style="margin-bottom:2px;">
+                Using an animal model of V1 damage, we are interested in the following areas:
+                <ul style="margin-top:5px;">
+                    <li>Longitudinal monitoring of the changes in physiology that occur in midget ganglion cells during degeneration. </li>
+                    <li>Physiology aimed at linking the response properties of resilient rarer ganglion cell types to blindsight. </li>
+                    <li>Connectomic reconstruction of remaining retinal circuits to determine how the retina remodels and rewires in the absence of the most common ganglion cell type.</li>
+                </ul>
+            </p>
+        </details>
+
+        <details>
+            <summary>
+                Linking rare retinal ganglion cells to downstream visual functions
+            </summary>
+            <p>
+                A common theme in the research areas above is the goal of placing primate ganglion cells in the context of the visual functions they evolved to mediate. The value of performing our physiology experiments in the living eye is that we can design follow-up experiments to test any hypotheses that arise regarding their roles in vision. We plan to develop a platform for performing causal loss-of-function manipulations that will allow us to test the necessity of specific ganglion cell types for downstream visual functions. A better understanding of the division of labor between the retina and the brain will be critical for developing retinal prosthetics and other vision restoration strategies.
+            </p>
+        </details>
+
+        <!-- <p class="myH2" style="margin-bottom:1%;">Research Areas</p>
+
                 <p>
                     V1 damage is common in strokes and leads to the loss of all conscious visual perception in the affected area. to retrograde degeneration of ganglion cells. Cell death appears to be limited to the dominant ganglion cell type in the primate fovea,...
 
                     We are interested in understanding the time course of ganglion cell degeneration and the changes in their physiology that occur prior to cell death. Dr. Krystel Huxlin at the University of Rochester has demonstrated training can restore ... This work is important for identifying when early treatment might be effective in stroke patients.
-                    <ul>
-                        <li>Longitudinal monitoring of the changes in physiology that occur in midget ganglion cells during degeneration, prior to cell death. This work is important for identifying when early treatment might be effective in  stroke patients.</li>
-                        <li>Link the response properties of resilient rarer ganglion cell types to blindsight. </li>
-                    </ul>
-                </p>
-            </details>
-
-            <br><br> -->
+                </p> -->
 
         <p class="myH2" style="margin-bottom:1%;">Techniques</p>
-        <p class="myH3">Adaptive Optics</p>
+        <p>
+            We are guided by research questions and use whichever technique is most applicable to a given research question. Fortunately, we have excellent colleagues and collaborators both within and beyond the University of Rochester. The main tools of the lab are functional imaging with adaptive optics, connectomics, circuit tracing and computational modeling. We focus on non-human primates (macaque and marmoset) to ensure our findings can directly translate to efforts to understand, diagnose, treat and restore vision in humans.
+        </p>
 
+        <p class="myH3">Adaptive Optics</p>
             <div class="responsive-two-column-grid">
-                <div class="text_content">
+                <div class="text_content" style="padding:0;"><!-- <div class="text_content"> -->
                     <p>
-                        Critical to our work is the ability to non-invasively study retinal structure and function in the living eye with adaptive optics. This approach enables longitudinal imaging of the same retinal neurons for months or years. This provides unique opportunities to study the response properties of retinal ganglion cells in depth, the progression of retinal degeneration, and to establish direct links between ganglion cell function and behavior.
+                        Critical to our work is the ability to non-invasively study retinal structure and function in the living eye with adaptive optics. This approach enables longitudinal imaging of the same retinal neurons for months or years. This provides unique opportunities to study the response properties of retinal ganglion cells in their natural habitat (the living eye), track the progression of retinal degeneration, and to establish direct links between ganglion cell function and behavior.
                         <br><br>
                         We use a fluorescence adaptive optics scanning laser ophthalmoscope, which is essentially a confocal microscope with the added capability of detecting and correcting for the eye's aberrations in real time. Viral vector-mediated gene delivery is used to express genetically encoded calcium indicators in the ganglion cell layer, which allows us to monitor the activity of hundreds of ganglion cells simultaneously while presenting visual stimuli.
                         <br><br>
-                        Functional retinal imaging with adaptive optics is still a relatively new technique and there are many opportunities to make substantial technical advances for students who are interested in optics, engineering, or computer science. Potential projects in this area include implementing high-speed imaging strategies to improve the temporal bandwidth of calcium imaging and detect action potentials with voltage imaging.
+                        Functional retinal imaging with adaptive optics is still a relatively new technique and there are also many opportunities to make substantial technical advances for students who are interested in optics, engineering, or computer science. For example, we plan to implement high-speed imaging strategies to improve the temporal bandwidth of calcium imaging and detect action potentials with voltage imaging.
                     </p>
                 </div>
                 <div class="image_content">
@@ -97,9 +135,8 @@
             </div>
 
         <p class="myH3">Connectomics</p>
-
             <div class="responsive-two-column-grid">
-                <div class="text_content">
+                <div class="text_content" style="padding:0;">
                     <p>
                         Serial block-face scanning electron microscopy (SBFSEM) slices through a volume of neural tissue, acquiring high-resolution (5 nm/pixel) EM images of each section. The resulting volume enables reconstructing neural circuits and their synaptic contacts in 3D, providing a comprehensive account of each ganglion cell type's upstream circuitry.
                         <br>
@@ -114,23 +151,7 @@
                     </p>
                 </div>
             </div>
-
-        <p class="myH2">Research Areas</p>
-            <p>Under construction - check back soon!</p>
     </main>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="../js/navbar.js"></script>
-    <script>
-        $(window).scroll(function () {
-            if ($(document).scrollTop() > 50) {
-                $('.nav').addClass('affix');
-                console.log("OK");
-            } else {
-                $('.nav').removeClass('affix');
-            }
-        });
-    </script>
 
     <footer>
         Copyright (c) 2024, Sara Patterson.

@@ -40,10 +40,11 @@ a:focus, a:hover {
 }
 
 ul {
-    padding-left: 8%;
+    padding-left: 6vw;
     padding-right: var(--centering);
     list-style-type: circle #000;
     list-style-position: outside;
+    margin-inline-start: 0;
     text-align: justify;
     font-size: 18px;
 }
